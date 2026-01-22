@@ -296,17 +296,17 @@ class BirthdaySurprise {
         }
 
         // Show birthday GIF overlay
-        const gifOverlay = document.createElement('div');
-        gifOverlay.className = 'birthday-gif-overlay';
-        gifOverlay.innerHTML = '<img src="birthday-12378_512.gif" alt="Happy Birthday!">';
-        document.body.appendChild(gifOverlay);
+        // const gifOverlay = document.createElement('div');
+        // gifOverlay.className = 'birthday-gif-overlay';
+        // gifOverlay.innerHTML = '<img src="birthday-12378_512.gif" alt="Happy Birthday!">';
+        // document.body.appendChild(gifOverlay);
 
         // Remove GIF after 5 seconds
-        setTimeout(() => {
-            if (gifOverlay.parentNode) {
-                gifOverlay.parentNode.removeChild(gifOverlay);
-            }
-        }, 1000);
+        // setTimeout(() => {
+        //     if (gifOverlay.parentNode) {
+        //         gifOverlay.parentNode.removeChild(gifOverlay);
+        //     }
+        // }, 1000);
 
         // Add birthday text animation
         this.showBirthdayText();
@@ -1177,7 +1177,7 @@ class BirthdaySurprise {
                 <div class="flip-book">
                     <div class="flip-book-cover" id="flipBookCover">
                         <div class="cover-content">
-                            <img src="coverballon.jpeg" alt="Birthday Cover" class="cover-image">
+                            <img src="coverBallon.jpeg" alt="Birthday Cover" class="cover-image">
                             <div class="cover-overlay">
                                 <p class="cover-subtitle">Tap to Open ✨</p>
                             </div>
@@ -1187,15 +1187,14 @@ class BirthdaySurprise {
                         <div class="inside-background"></div>
                         <div class="inside-content">
                             <div class="greeting-text">
-                                <h1 class="birthday-greeting">Happy Birthday, Beautiful!</h1>
+                                <h1 class="birthday-greeting">Happy Birthday, Princess 👸🏻💖!</h1>
                                 <div class="birthday-message">
                                     On your special day, I want you to know how much you mean to me. 
-                                    Every moment with you is a treasure, and I'm so grateful to celebrate 
-                                    another year of your amazing life! 💕
+                                    Every heartbeat of mine celebrates you today. You are not just a year older, but a year more loved! 💕
                                 </div>
                                 <div class="signature">
                                     <p>With all my love,</p>
-                                    <p class="signature-name">Your Special Someone 💖</p>
+                                    <p class="signature-name"> Sweta ji 😍😘</p>
                                 </div>
                             </div>
                             
@@ -1777,7 +1776,9 @@ class BirthdaySurprise {
                     <img src="surprise.gif" alt="Surprise" class="final-surprise-gif">
                     <h1 class="final-title">Thank You!</h1>
                     <div class="final-text">
-                        <p>This special day is made even more wonderful because of you.</p>
+                    <p>With you, every day feels like a celebration, but today is extra special because it gave me you. Happy Birthday sweta 💖</p>
+                    <p>Happy Birthday to the most beautiful part of my life 😊</p>
+                        <p>This special day is made even more wonderful because of you 💫</p>
                         <p>Hope you enjoyed this little surprise! ✨</p>
                        
                     </div>
