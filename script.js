@@ -57,17 +57,17 @@ class BirthdaySurprise {
         }
 
         // Show birthday GIF overlay
-        const gifOverlay = document.createElement('div');
-        gifOverlay.className = 'birthday-gif-overlay';
-        gifOverlay.innerHTML = '<img src="birthday-12378_512.gif" alt="Happy Birthday!">';
-        document.body.appendChild(gifOverlay);
+        // const gifOverlay = document.createElement('div');
+        // gifOverlay.className = 'birthday-gif-overlay';
+        // gifOverlay.innerHTML = '<img src="birthday-12378_512.gif" alt="Happy Birthday!">';
+        // document.body.appendChild(gifOverlay);
 
-        // Remove GIF after 5 seconds
-        setTimeout(() => {
-            if (gifOverlay.parentNode) {
-                gifOverlay.parentNode.removeChild(gifOverlay);
-            }
-        }, 1000);
+        // // Remove GIF after 5 seconds
+        // setTimeout(() => {
+        //     if (gifOverlay.parentNode) {
+        //         gifOverlay.parentNode.removeChild(gifOverlay);
+        //     }
+        // }, 1000);
 
         // Update button
         const decorateBtn = document.getElementById('decorate-btn');
@@ -1177,7 +1177,7 @@ class BirthdaySurprise {
                 <div class="flip-book">
                     <div class="flip-book-cover" id="flipBookCover">
                         <div class="cover-content">
-                            <img src="coverballon.webp" alt="Birthday Cover" class="cover-image">
+                            <img src="coverballon.jpeg" alt="Birthday Cover" class="cover-image">
                             <div class="cover-overlay">
                                 <p class="cover-subtitle">Tap to Open ✨</p>
                             </div>
