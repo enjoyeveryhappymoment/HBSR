@@ -29,7 +29,11 @@ class BirthdaySurprise {
         // Start surprise button
         const startBtn = document.getElementById('start-surprise');
         if (startBtn) {
-            startBtn.addEventListener('click', () => this.startSurprise());
+            startBtn.addEventListener('click', () =>{ 
+                const backgroundAudio = new Audio("humsafar_audio.mpeg");
+                backgroundAudio.loop = true;
+                backgroundAudio.play()
+                this.startSurprise()});
         }
 
         // Navigation
@@ -143,7 +147,7 @@ class BirthdaySurprise {
             introPage.classList.add('hidden');
             mainSurprise.classList.remove('hidden');
             this.createFireworks();
-            this.playSuccessSound();
+            // this.playSuccessSound();
         }
     }
 
