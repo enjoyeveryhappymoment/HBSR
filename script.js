@@ -334,32 +334,32 @@ class BirthdaySurprise {
         const slidesData = [
             {
                 icon: "fas fa-heart",
-                title: "Photo 1 - Add your favorite memory here!",
+                title: "./assets/1.png",
                 caption: "Our first amazing moment together ❤️"
             },
             {
                 icon: "fas fa-camera",
-                title: "Photo 2 - Another special memory!",
-                caption: "That unforgettable day when... 🌟"
+                title: "./assets/2.jpg",
+                caption: "That unforgettable day when everything just felt right 🌟"
             },
             {
                 icon: "fas fa-star",
-                title: "Photo 3 - More beautiful memories!",
+                title: "./assets/3.jpg",
                 caption: "The moment I knew you were special 💫"
             },
             {
                 icon: "fas fa-kiss",
-                title: "Photo 4 - Our romantic dinner!",
-                caption: "When you surprised me with that perfect date 💝"
+                title: "./assets/4.jpg",
+                caption: "An evening that reminded me why I enjoy your company 😊💝"
             },
             {
                 icon: "fas fa-plane",
-                title: "Photo 5 - Our adventure trip!",
+                title: "./assets/5.jpg",
                 caption: "Exploring the world together 🌍"
             },
             {
                 icon: "fas fa-gift",
-                title: "Photo 6 - That special surprise!",
+                title: "./assets/6.jpeg",
                 caption: "The day you made all my dreams come true 🎁"
             }
         ];
@@ -422,14 +422,14 @@ class BirthdaySurprise {
         const slidesHTML = slidesData.map((slide, index) => `
             <div class="slide ${index === 0 ? 'active' : ''}">
                 <div class="photo-placeholder">
-                    <i class="${slide.icon}" style="font-size: ${isMobile ? '3rem' : '4rem'}; color: #fff; opacity: 0.8;"></i>
-                    <p style="color: white; margin-top: 20px; font-size: ${isMobile ? '1rem' : '1.2rem'};">${slide.title}</p>
+                    
+                    <img class="photo-gallery-image" src="${slide.title}" />
                 </div>
                 <div class="slide-caption">${slide.caption}</div>
             </div>
         `).join('');
 
-        // Generate indicators HTML
+        // Generate indicators HTML <i class="${slide.icon}" style="font-size: ${isMobile ? '3rem' : '4rem'}; color: #fff; opacity: 0.8;"></i>  <p style="color: white; margin-top: 20px; font-size: ${isMobile ? '1rem' : '1.2rem'};">${slide.title}</p>
         const indicatorsHTML = slidesData.map((slide, index) => `
             <span class="indicator ${index === 0 ? 'active' : ''}" data-slide="${index}"></span>
         `).join('');
@@ -1005,6 +1005,12 @@ class BirthdaySurprise {
                 margin: 20px;
                 backdrop-filter: blur(5px);
                 border: 1px solid rgba(255, 255, 255, 0.2);
+            }
+            .photo-gallery-image{
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+                border-radius: 12px;
             }
 
             .slide-caption {
@@ -1773,12 +1779,12 @@ class BirthdaySurprise {
         // Create final screen container
         const finalScreen = document.createElement('div');
         finalScreen.className = 'final-screen-page';
-        //  <div class="final-hearts">💖💕💖</div>
+        //  <div class="final-hearts">💖💕💖</div> <h1 class="final-title">Thank You!</h1> <i class="fa-solid fa-refresh"></i>
         finalScreen.innerHTML = `
             <div class="final-content">
                 <div class="final-message">
                     <img src="surprise.gif" alt="Surprise" class="final-surprise-gif">
-                    <h1 class="final-title">Thank You!</h1>
+                    
                     <div class="final-text">
                     <p>With you, every day feels like a celebration, but today is extra special because it gave me you. Happy Birthday sweta 💖</p>
                     <p>Happy Birthday to the most beautiful part of my life 😊</p>
@@ -1787,7 +1793,7 @@ class BirthdaySurprise {
                        
                     </div>
                     <button class="restart-journey" onclick="window.location.reload()">
-                       <i class="fa-solid fa-refresh"></i> Replay <i class="fas fa-heart"></i>
+                        Replay <i class="fas fa-heart"></i>
                     </button>
                 </div>
             </div>
